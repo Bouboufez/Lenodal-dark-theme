@@ -1,0 +1,278 @@
+html,
+body {
+    font-family: sans-serif !important;
+    background-color: rgb(25, 25, 25);
+    color: rgb(220, 220, 220);
+}
+
+td,
+span.pagination,
+b.nav,
+li {
+    color: rgb(220, 220, 220) !important
+}
+
+td[bgcolor="#FFFFFF"],
+td[valign],
+td[align],
+td[width],
+td.gensmall,
+table.legend>tbody>tr>td,
+td[colspan],
+td[nowrap],
+td[style],
+table[cellspacing="0"]>tbody>tr>td,
+table[cellspacing="3"]>tbody>tr>td {
+    background-color: rgb(25, 25, 25);
+}
+
+a {
+    background-image: none !important;
+    color: rgb(150, 200, 240) !important;
+    font-family: sans-serif !important;
+}
+
+a.cat,
+td.row3,
+tr.row3>td,
+td.row3>table>tbody>tr>td {
+    background-color: rgb(45, 45, 45);
+}
+
+td.row1,
+td.row2,
+td.row1>table>tbody>tr>td,
+td.row2>table>tbody>tr>td {
+    background-color: rgb(55, 55, 55);
+}
+
+th {
+    background-image: none;
+    background-color: rgb(35, 35, 35);
+}
+
+td.cat,
+td.cat>a {
+    background-image: none;
+    background-color: rgb(35, 35, 35);
+}
+
+/* Menu utilisateur */
+td.genmed_menu {
+    background-color: rgb(55, 55, 55) !important;
+    border-bottom: none;
+}
+
+span.copyright {
+    color: rgb(200, 200, 200)
+}
+
+/* A dissocier ?*/
+td.nopadding,
+tr,
+td.spacer {
+    background-color: rgb(25, 25, 25);
+}
+
+/* Profil à gauche des messages */
+b.postauthor,
+span.postdetails,
+p.breadcrumbs {
+    color: rgb(220, 220, 220);
+}
+
+/* Citations et blocs de code */
+div.quotetitle,
+div.codetitle {
+    background-color: rgb(75, 75, 75);
+    color: rgb(220, 220, 220);
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgb(120, 120, 120);
+    border-bottom: none
+}
+
+div.quotecontent,
+div.codecontent {
+    background-color: rgb(90, 90, 90);
+    color: rgb(220, 220, 220);
+    border-radius: 0 0 10px 10px;
+    border: 1px solid rgb(120, 120, 120);
+    border-top: none
+}
+
+/* Citations emboitées les unes dans les autres */
+div.quotecontent>div.quotecontent {
+    background-color: rgb(110, 110, 110);
+}
+
+div.quotecontent>div.quotecontent>div.quotecontent {
+    background-color: rgb(130, 130, 130);
+}
+
+.tablebg {
+    background-color: unset;
+}
+
+/* Correction de bug : titre du dernier billet de blog trop long */
+a.genmed_menu_link,
+td.genmed_menu>a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 280px;
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 4px;
+}
+
+/* Arrière-plan des messages */
+tr.row1 td,
+tr.row1>td>table>tbody>tr>td {
+    background-color: rgb(65, 65, 65) !important
+}
+
+tr.row2 td,
+tr.row2>td>table>tbody>tr>td {
+    background-color: rgb(50, 50, 50) !important
+}
+
+/* Item sélectionné du menu des MP */
+li.row2 {
+    background-color: rgb(75, 75, 75);
+}
+
+/* Pour éviter l'overdose de bordures */
+table {
+    border: 0px;
+    border-collapse: collapse;
+}
+
+td.cat>table {
+    height: inherit
+}
+
+/* Menu en haut à droite */
+table[bgcolor="#C1D5DC"],
+table[bgcolor="#C1D5DC"]>tbody>tr>td,
+td[bgcolor="525C94"],
+td[bgcolor="#8199BA"] {
+    background-color: rgb(55, 55, 55) !important;
+}
+
+table[bgcolor="#C1D5DC"] {
+    border-bottom: 1px solid rgb(75, 75, 75)
+}
+
+/* Correction de bug : images trop larges qui dépassent */
+div.postbody {
+    max-width: calc(100vw - 200px)
+}
+
+img[alt="Image"] {
+    max-width: 100%
+}
+
+/* Remplacement des images contenant uniquement du texte dont le rendu sur fond sombre est mauvais (sauf logo) */
+img[src="http://forums.lenodal.com/images/titre_dernieresvideospubliees.gif"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='21px' width='225px'><text x='7' y='15' fill='rgb(119, 128, 184)' font-size='13' font-family='sans-serif'>DERNIÈRES VIDÉOS PUBLIÉES</text></svg>");
+    height: 0;
+    width: 0;
+    padding: 21px 225px 0 0;
+}
+
+img[src="http://forums.lenodal.com/images/typo_touteslesnouveautes.gif"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='332px'><text x='325px' y='12' fill='rgb(119, 128, 184)' font-size='11' font-family='sans-serif' text-anchor='end'>⏹ TOUTES LES NOUVEAUTÉS</text></svg>");
+    height: 0;
+    width: 0;
+    padding: 16px 332px 0 0;
+}
+
+img[alt="Retour à l'accueil"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='244px'><text x='0' y='12' fill='rgb(119, 128, 184)' font-size='11' font-family='sans-serif'>⏹ RETOUR À L'ACCUEIL</text></svg>");
+    height: 0;
+    width: 0;
+    padding: 16px 244px 0 0;
+}
+
+
+input,
+select {
+    background-color: rgb(220, 220, 220) !important
+}
+
+textarea {
+    background-color: rgb(180, 180, 180) !important
+}
+
+/* Conseils écriture d'un message */
+.helpline {
+    background-color: rgb(55, 55, 55) !important;
+    color: rgb(220, 220, 220);
+    user-select: text;
+}
+
+/* Sélecteur de couleur */
+td[width="80"]>table[border="0"]>tbody>tr>td[bgcolor="#FFFFFF"] {
+    background-color: white
+}
+
+td[width="80"]>table[border="0"]>tbody>tr>td {
+    padding: 0px;
+}
+
+td[width="80"]>table[border="0"]>tbody>tr>td>a>img {
+    width: 12px;
+    height: 11px;
+}
+
+
+/* légendes couleurs MP */
+td.pm_marked_colour {
+    background-color: #000000
+}
+
+td.pm_replied_colour {
+    background-color: #A9B8C2
+}
+
+td.pm_friend_colour {
+    background-color: #007700
+}
+
+td.pm_foe_colour {
+    background-color: #DD0000
+}
+
+/* Pagination MP */
+td[width="80%"]>div#pagecontent>table.tablebg>tbody>tr>td.row1,
+td[width="80%"]>div#pagecontent>table.tablebg>tbody>tr>td.row1>table>tbody>tr>td {
+    background-color: rgb(25, 25, 25)
+}
+
+/* surlignage recherche */
+.posthilit {
+    background-color: rgb(255, 0, 255)
+}
+
+/* Nom des utilisateurs spéciaux en tant que liens */
+a[style="color:#AA0000"] {
+    color: #AA0000 !important
+}
+
+a[style="color:#00AA00"] {
+    color: #00AA00 !important
+}
+
+a[style="color:#6633CC"] {
+    color: #6633CC !important
+}
+
+a[style="color:#9933FF"] {
+    color: #9933FF !important
+}
+
+/* Sondages */
+form[method="post"]>table[align="center"]>tbody>tr>td,
+form[method="post"]>table[align="center"]>tbody>tr>td>table>tbody>tr>td {
+    background-color: rgb(55, 55, 55)
+}
