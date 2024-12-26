@@ -114,8 +114,8 @@ div.quotecontent>div.quotecontent>div.quotecontent {
 }
 
 /* Correction de bug : titre du dernier billet de blog trop long */
-a.genmed_menu_link,
-td.genmed_menu>a {
+a.genmed_menu_link[href="http://blog.lenodal.com/"],
+td.genmed_menu>a[href="http://blog.lenodal.com/"] {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -123,6 +123,7 @@ td.genmed_menu>a {
     display: inline-block;
     font-size: 11px;
     margin-right: 4px;
+    vertical-align:middle;
 }
 
 /* Arrière-plan des messages */
